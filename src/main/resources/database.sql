@@ -40,7 +40,7 @@ CREATE TABLE `authorization_server_client` (
 
 LOCK TABLES `authorization_server_client` WRITE;
 /*!40000 ALTER TABLE `authorization_server_client` DISABLE KEYS */;
-INSERT INTO `authorization_oauth2_server` VALUES (1,'client_id','Y2JmY2M3NGItMDdjZC00YWJiLTkwNmItYWJkZGQ4ZmExYmVj','read-write',3600,7200);
+INSERT INTO `authorization_server_client` VALUES (1,'client_id','Y2JmY2M3NGItMDdjZC00YWJiLTkwNmItYWJkZGQ4ZmExYmVj','read-write',3600,7200);
 /*!40000 ALTER TABLE `authorization_server_client` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -48,6 +48,7 @@ UNLOCK TABLES;
 -- Table structure for table `operator_server_client`
 --
 
+LOCK TABLES `operator_server_client` WRITE;
 DROP TABLE IF EXISTS `operator_server_client`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
@@ -69,7 +70,7 @@ CREATE TABLE `operator_server_client` (
 
 LOCK TABLES `operator_server_client` WRITE;
 /*!40000 ALTER TABLE `operator_server_client` DISABLE KEYS */;
-INSERT INTO `operator_oauth2_server` VALUES
+INSERT INTO `operator_server_client` VALUES
 (1,'OAUTH2DEMO_ADMIN','1234567890','ROLE_ADMIN',null,0,1),
 (2,'OAUTH2DEMO_USER','1234567890','ROLE_USER',null,0,1),
 (3,'OAUTH2DEMO_CLIENT','1234567890','ROLE_CLIENT',null,0,1);

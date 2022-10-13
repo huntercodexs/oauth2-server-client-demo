@@ -1,9 +1,8 @@
 {
 	"info": {
-		"_postman_id": "2c6b2723-d7ff-4896-9589-6afd95270f50",
-		"name": "OAUTH2-SERVER-CLIENT-DEMO",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "19022303"
+		"_postman_id": "49e0d084-dfce-406d-8782-900ca7bc47a4",
+		"name": "JAVA - OAUTH2-SERVER-CLIENT-DEMO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
@@ -19,7 +18,12 @@
 						},
 						{
 							"key": "accessToken",
-							"value": "31be2358-d45f-4043-9bbe-a23c86bf64d0",
+							"value": "434ff461-c245-47ae-909f-a0d9c0aa262f",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "http://localhost:33011/huntercodexs/server-client/api/rest/oauth/v1/oauth/token",
 							"type": "string"
 						},
 						{
@@ -30,11 +34,6 @@
 						{
 							"key": "password",
 							"value": "1234567890",
-							"type": "string"
-						},
-						{
-							"key": "accessTokenUrl",
-							"value": "http://localhost:33000/api/rest/oauth/v1/oauth/token",
 							"type": "string"
 						},
 						{
@@ -67,15 +66,15 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:33000/huntercodexs/api/welcome",
+					"raw": "http://localhost:33011/huntercodexs/server-client/welcome",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "33000",
+					"port": "33011",
 					"path": [
 						"huntercodexs",
-						"api",
+						"server-client",
 						"welcome"
 					]
 				}
@@ -91,15 +90,15 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:33000/huntercodexs/api/allowed",
+					"raw": "http://localhost:33011/huntercodexs/server-client/allowed",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "33000",
+					"port": "33011",
 					"path": [
 						"huntercodexs",
-						"api",
+						"server-client",
 						"allowed"
 					]
 				}
