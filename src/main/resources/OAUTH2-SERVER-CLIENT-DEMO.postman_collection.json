@@ -1,0 +1,140 @@
+{
+	"info": {
+		"_postman_id": "2c6b2723-d7ff-4896-9589-6afd95270f50",
+		"name": "OAUTH2-SERVER-CLIENT-DEMO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19022303"
+	},
+	"item": [
+		{
+			"name": "Welcome",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "tokenType",
+							"value": "bearer",
+							"type": "string"
+						},
+						{
+							"key": "accessToken",
+							"value": "31be2358-d45f-4043-9bbe-a23c86bf64d0",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "OAUTH2DEMO_USER",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "1234567890",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "http://localhost:33000/api/rest/oauth/v1/oauth/token",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "huntercodexs",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "cbfcc74b-07cd-4abb-906b-abddd8fa1bec",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "client_id",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "password_credentials",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:33000/huntercodexs/api/welcome",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "33000",
+					"path": [
+						"huntercodexs",
+						"api",
+						"welcome"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Alowed",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:33000/huntercodexs/api/allowed",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "33000",
+					"path": [
+						"huntercodexs",
+						"api",
+						"allowed"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": [
+			{
+				"key": "addTokenTo",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
